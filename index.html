@@ -10,13 +10,13 @@
         h1 { color: #333; margin-bottom: 30px; }
         
         /* Her uygulama için kutu (Card) tasarımı */
-        .app-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; }
+        .app-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; text-align: left; }
         .app-card h2 { margin: 0 0 10px 0; color: #222; font-size: 22px; }
-        .app-card p { color: #555; margin-bottom: 15px; font-size: 14px; }
+        .app-card p { color: #555; margin-bottom: 15px; font-size: 14px; line-height: 1.5; }
         
         /* İndirme Butonu Tasarımı (Yeşil) */
-        a { display: inline-block; padding: 12px 25px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; transition: background-color 0.3s; }
-        a:hover { background-color: #1B5E20; }
+        .btn { display: inline-block; padding: 12px 25px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; transition: background-color 0.3s; text-align: center; width: 100%; box-sizing: border-box; }
+        .btn:hover { background-color: #1B5E20; }
     </style>
 </head>
 <body>
@@ -28,10 +28,15 @@
         <div class="app-card">
             <h2>Asistan</h2>
             <p>Öğretmenler için haftalık ders programı, sınıf listesi (+/- takibi) ve yıllık plan takibi yapmaya yarayan yardımcı uygulama.</p>
-            <a href="https://github.com/gereksiz3x/apps/releases/download/v1.0/asistan_v1.0.apk">Asistan v1.0 İndir</a>
+            <a href="https://github.com/gereksiz3x/apps/releases/download/v1.0/asistan_v1.0.apk" class="btn">Asistan v1.0 İndir</a>
         </div>
 
-        <!-- YENİ UYGULAMALAR BURAYA EKLENECEK (KaGuKa vs.) -->
+        <!-- KAGUKA UYGULAMASI -->
+        <div class="app-card">
+            <h2>KaGuKa</h2>
+            <p>Günlük hayatta "Kaç Gün Kaldı?" sorusuna cevap arayan, önemli günleri ve hedefleri takip etmenizi sağlayan pratik bir geri sayım uygulaması.</p>
+            <a href="https://github.com/gereksiz3x/apps/releases/download/kaguka-v1.0/kaguka_v1.0.apk" class="btn">KaGuKa v1.0 İndir</a>
+        </div>
         
     </div>
 </body>
