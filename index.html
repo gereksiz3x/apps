@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistan - İndir</title>
+    <title>Uygulamalarım</title>
     <style>
         body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f0f0f0; }
         .container { background: white; padding: 40px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #333; margin-bottom: 10px; }
-        p { color: #666; line-height: 1.6; margin-bottom: 20px; font-size: 16px; }
-        .surum { font-weight: bold; color: #2E7D32; margin-bottom: 20px; display: block; }
-        /* BUTON RENGİ YEŞİL OLARAK GÜNCELLENDİ */
-        a { display: inline-block; margin-top: 10px; padding: 15px 30px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; transition: background-color 0.3s; }
+        h1 { color: #333; margin-bottom: 30px; }
+        
+        /* Her uygulama için kutu (Card) tasarımı */
+        .app-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; background-color: #fafafa; }
+        .app-card h2 { margin: 0 0 10px 0; color: #222; font-size: 22px; }
+        .app-card p { color: #555; margin-bottom: 15px; font-size: 14px; }
+        
+        /* İndirme Butonu Tasarımı (Yeşil) */
+        a { display: inline-block; padding: 12px 25px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; transition: background-color 0.3s; }
         a:hover { background-color: #1B5E20; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Asistan</h1>
-        <p>Öğretmenler için <strong>haftalık ders programı, sınıf listesi (+/- takibi)</strong> ve <strong>yıllık plan takibi</strong> yapmaya yarayan yardımcı uygulama.</p>
+        <h1>Uygulamalarım</h1>
+        <p style="color: #666; margin-bottom: 30px;">Geliştirdiğim mobil uygulamaları aşağıdan indirebilirsiniz.</p>
         
-        <span class="surum">Güncel Sürüm: Asistan_v1.0</span>
+        <!-- ASISTAN UYGULAMASI -->
+        <div class="app-card">
+            <h2>Asistan</h2>
+            <p>Öğretmenler için haftalık ders programı, sınıf listesi (+/- takibi) ve yıllık plan takibi yapmaya yarayan yardımcı uygulama.</p>
+            <a href="https://github.com/gereksiz3x/apps/releases/download/v1.0/asistan_v1.0.apk">Asistan v1.0 İndir</a>
+        </div>
+
+        <!-- YENİ UYGULAMALAR BURAYA EKLENECEK (KaGuKa vs.) -->
         
-        <a href="https://github.com/gereksiz3x/asistan/releases/download/v1.0/asistan_v1.0.apk" id="indir-btn">Uygulamayı İndir</a>
     </div>
 </body>
 </html>
