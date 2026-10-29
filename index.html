@@ -13,18 +13,22 @@
         .hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
         .hero p { font-size: 16px; opacity: 0.9; }
 
-        .container { max-width: 800px; margin: -30px auto 40px; padding: 0 20px; display: flex; flex-direction: column; gap: 20px; }
+        /* GRID (YAN YANA) TASARIMI */
+        .container { max-width: 1000px; margin: -30px auto 40px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 
         .app-card { background: white; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #f0f0f0; }
         .app-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); }
         
         .app-header { display: flex; align-items: center; gap: 15px; }
-        .app-icon { width: 60px; height: 60px; border-radius: 14px; background-color: #e8f5e9; display: flex; justify-content: center; align-items: center; font-size: 28px; font-weight: bold; color: #2E7D32; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); }
+        
+        /* LOGO TASARIMI */
+        .app-icon { width: 64px; height: 64px; border-radius: 14px; background-color: #e8f5e9; display: flex; justify-content: center; align-items: center; font-size: 28px; font-weight: bold; color: #2E7D32; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); overflow: hidden; }
+        .app-icon img { width: 100%; height: 100%; object-fit: cover; }
+
         .app-title { font-size: 22px; font-weight: 700; color: #222; }
+        .app-desc { color: #555; font-size: 14px; flex-grow: 1; }
         
-        .app-desc { color: #555; font-size: 15px; }
-        
-        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 24px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 10px; font-size: 16px; font-weight: 600; transition: background-color 0.2s; width: 100%; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 24px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 600; transition: background-color 0.2s; width: 100%; margin-top: auto; }
         .btn:hover { background-color: #1B5E20; }
         .btn svg { width: 18px; height: 18px; fill: currentColor; }
 
@@ -43,7 +47,9 @@
         <!-- ASISTAN UYGULAMASI -->
         <div class="app-card">
             <div class="app-header">
-                <div class="app-icon">A</div>
+                <div class="app-icon">
+                    <img src="asistan.png" alt="Asistan Logo">
+                </div>
                 <div class="app-title">Asistan</div>
             </div>
             <p class="app-desc">Öğretmenler için haftalık ders programı, sınıf listesi (+/- takibi) ve yıllık plan takibi yapmaya yarayan yardımcı uygulama.</p>
@@ -56,7 +62,7 @@
         <!-- KAGUKA UYGULAMASI -->
         <div class="app-card">
             <div class="app-header">
-                <div class="app-icon">K</div>
+                <div class="app-icon">K</div> <!-- Logo yüklenince burayı değiştireceğiz -->
                 <div class="app-title">KaGuKa</div>
             </div>
             <p class="app-desc">Günlük hayatta "Kaç Gün Kaldı?" sorusuna cevap arayan, önemli günleri ve hedefleri takip etmenizi sağlayan pratik bir geri sayım uygulaması.</p>
