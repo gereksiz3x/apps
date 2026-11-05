@@ -14,14 +14,14 @@
         .hero p { font-size: 16px; opacity: 0.9; }
 
         /* GRID (YAN YANA) TASARIMI */
-        .container { max-width: 1000px; margin: -30px auto 40px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .container { max-width: 1000px; margin: -30px auto 20px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 
         .app-card { background: white; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 15px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #f0f0f0; }
         .app-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); }
         
         .app-header { display: flex; align-items: center; gap: 15px; }
         
-        /* LOGO TASARIMI (GÜNCELLENDİ) */
+        /* LOGO TASARIMI */
         .app-icon { width: 64px; height: 64px; border-radius: 14px; background-color: #e8f5e9; display: flex; justify-content: center; align-items: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); overflow: hidden; padding: 6px; }
         .app-icon img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
 
@@ -31,6 +31,10 @@
         .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 24px; background-color: #2E7D32; color: white; text-decoration: none; border-radius: 10px; font-size: 15px; font-weight: 600; transition: background-color 0.2s; width: 100%; margin-top: auto; }
         .btn:hover { background-color: #1B5E20; }
         .btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+        /* BİLGİLENDİRME KUTUSU */
+        .info-box { max-width: 960px; margin: 0 auto 40px; padding: 0 20px; }
+        .info-content { background-color: #fff3cd; border-left: 5px solid #ffc107; color: #856404; padding: 15px 20px; border-radius: 8px; font-size: 14px; line-height: 1.5; }
 
         .footer { text-align: center; padding: 20px; color: #888; font-size: 14px; }
     </style>
@@ -74,6 +78,13 @@
             </a>
         </div>
 
+    </div>
+
+    <!-- BİLGİLENDİRME KUTUSU -->
+    <div class="info-box">
+        <div class="info-content">
+            <strong>⚠️ Önemli Bilgilendirme:</strong> Uygulamaları indirirken <strong>Chrome, Brave, Opera, Yandex</strong> gibi <em>Chromium tabanlı</em> tarayıcılarda (mobilde) %100'de takılma sorunu yaşarsanız, lütfen <strong>Firefox, Edge</strong> veya <strong>Safari</strong> gibi diğer tarayıcıları kullanmayı deneyin. Bu tarayıcılarda indirme işlemi sorunsuz gerçekleşmektedir.
+        </div>
     </div>
 
     <div class="footer">
